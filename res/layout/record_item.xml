@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/idd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="24dp" />
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/out_tradeno"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="2016070412575"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/transactionid"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="44558522755555"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/timeend"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:text="555555"
+        android:gravity="center"
+        android:textSize="24dp" />
+
+</LinearLayout>

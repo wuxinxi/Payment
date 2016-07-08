@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/autoScan"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:textSize="26sp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/button_style"
+            android:text="主扫" />
+
+        <Button
+            android:id="@+id/passiveScan"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:textSize="26sp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_style"
+            android:text="被扫" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textLineShow1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="@color/blueColor" />
+        
+        <TextView
+            android:id="@+id/textLineShow2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/whiteColor" />
+        
+        
+    </LinearLayout>
+
+    <!-- 扫码区域 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1" >
+
+        <!-- 图片提示 -->
+
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/imageShow"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/bg"
+                android:contentDescription="@string/hello_world" />
+            
+        </LinearLayout>
+
+        <!-- 二维码扫描 -->
+
+        <FrameLayout
+            android:id="@+id/surfaceViewLayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:visibility="gone" >
+
+            <com.wizarpos.barcode.scanner.ScannerRelativeLayout
+                android:id="@+id/scanner"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>
